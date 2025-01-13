@@ -198,6 +198,9 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: (index) {
           navIndex = index;
           setState(() {});
+          if (navIndex == 0 && index == 0) {
+            fetchData();
+          }
         },
       ),
     );
